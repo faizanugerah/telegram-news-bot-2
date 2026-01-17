@@ -9,12 +9,7 @@ from html import unescape
 RSS_BASE = "https://api.rss2json.com/v1/api.json?rss_url="
 
 FEEDS = {
-    "CNBC": RSS_BASE + "https://www.cnbcindonesia.com/market/rss",
-    "CNN Indonesia": RSS_BASE + "https://www.cnnindonesia.com/ekonomi/rss",
-    "Kompas": RSS_BASE + "https://rss.kompas.com/kompascom_ekonomi",
-    "Okezone": RSS_BASE + "https://economy.okezone.com/rss",
-    "Tempo": RSS_BASE + "https://rss.tempo.co/bisnis",
-    "Detik": RSS_BASE + "https://finance.detik.com/rss"
+    "IDX Channel": RSS_BASE + "https://www.idxchannel.com/rss"
 }
 
 KEYWORDS = [
@@ -152,6 +147,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
 
