@@ -13,7 +13,7 @@ FEEDS = {
 }
 
 KEYWORDS = [
-    "saham"
+    "saham", "tbk"
 ]
 ALLOW_ALL_IF_NO_MATCH = False
 SUMMARY_LIMIT = 600
@@ -79,7 +79,7 @@ async def process_feed(source, url):
 
     sent_count = 0
     for entry in entries:
-        if sent_count >= 3:
+        if sent_count >= 1:
             break
 
         title = entry.get("title", "").strip()
@@ -143,6 +143,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
 
