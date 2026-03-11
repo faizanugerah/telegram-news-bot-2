@@ -19,7 +19,7 @@ ALLOW_ALL_IF_NO_MATCH = False
 SUMMARY_LIMIT = 600
 
 # ========= CONFIG BOT =========
-BOT_TOKEN = "8274873827:AAHMAZkrHc6iUs-34sln_bAfCgLNMPJczq8"
+BOT_TOKEN = "8274873827:AAGQzgW0VZroXOkn2jwdew4WBTlNaBMQHIU"
 CHANNEL_ID = -1002055850190   # group/channel id
 THREAD_ID = 6024              # thread/topic id
 bot = Bot(token=BOT_TOKEN)
@@ -143,6 +143,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
 
